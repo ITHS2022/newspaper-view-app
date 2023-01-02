@@ -1,5 +1,5 @@
 body {
-    background: #ffff;
+    background: whitesmoke;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
     width: 100%;
@@ -9,6 +9,9 @@ body {
 }
 h1{
     font-size: 28px;
+}
+.title_text{
+    color: white;
 }
 .top{
     display: flex;
@@ -24,4 +27,35 @@ h1{
     line-height: 0;
     margin-top:auto;
     margin-bottom: auto;
+}
+.result{
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+    position:relative;
+}
+.result a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+  }
+.date{
+    margin: 5px;
+}
+.title{
+    font-size: 45px;
+    margin: 5px;
 }

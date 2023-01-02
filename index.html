@@ -1,28 +1,32 @@
 <!DOCTYPE html>
     <head>
-        <title>Web</title>
+        <title>生徒会新聞Web</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="sheet.css">
         <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="get();">
         <div class="top">
             <div class="action_box">
                 <a href=""><img src="images/action.png" alt="アクションボタン"></a>
             </div>
             <div class="title_text">
-                <p>Web</p>
+                <p>生徒会新聞Web</p>
             </div>
         </div>
         <div class="main">
             <div class="text">
             </div>
             <div class="content">
-                <button type="button" onclick="get()" class="btn btn-info">
+                <!-- json取得ボタン 現在はonloadでページ読み込み時に自動実行
+                    <button type="button" onclick="get()" class="btn btn-info">
                     取得
-                  </button>
+                  </button> 
+                -->
+                <p>まだPDFの個人情報対策してないので流出厳禁</p>
                 <div id="view_links" class="view_links">
+                    <div class="result"><div class="date"><br></div><div class="title"><br></div></div>
                 </div>
             </div>
         </div>

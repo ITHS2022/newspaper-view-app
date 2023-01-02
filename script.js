@@ -6,8 +6,8 @@ function get() {// Get リクエスト
         .then(data => {
             let result = document.getElementById('view_links');
             result.innerHTML = "";
-            //for (var i = 0; i < data.main.length; i++){
+            for (var i = 0; i < data.main.length; i++){
                     result.insertAdjacentHTML('beforeend', `<div class="result">jsonデータ${data.main[i][0]}年${data.main[i][1]}月${data.main[i][2]}日発行</div>`);
-                //}
+                }
             })
         }

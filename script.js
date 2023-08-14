@@ -8,7 +8,7 @@ function get() {// Get リクエスト
             
             for (var i = 0; i < data.main.length; i++){
                     const number = i+1; //新聞連番表示用 jsonが0から始まるので+1
-                   result.insertAdjacentHTML('beforeend', `<div class="result"><div class="date">${data.main[i][0]}年${data.main[i][1]}月${data.main[i][2]}日発行</div><div class="title">生徒会新聞${number}</div><a href="javascript:location.href = '/viewpage.html?numb='+${number};"></a></div>`);
+                   result.insertAdjacentHTML('beforeend', `<div class="result"><div class="date">${data.main[i][0]}年${data.main[i][1]}月${data.main[i][2]}日発行</div><div class="title">生徒会新聞${number}</div><a href="javascript:location.href = 'newspaper-view-app/viewpage.html?numb='+${number};"></a></div>`);
                 }
             }
             )
